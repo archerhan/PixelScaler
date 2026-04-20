@@ -63,11 +63,5 @@ This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**
 
 *Built with ❤️ for pixel artists and retro gaming enthusiasts.*
 
-```
-***
-
-### 💡 A few quick tips for your GitHub repository:
-1. **Taking Screenshots:** For your Hero Image, take a clean screenshot of the app on your Mac desktop (you can use `Cmd + Shift + 4` then press `Spacebar` to capture just the window with a nice drop shadow).
-2. **Comparison Image:** Create a single image showing a 3-way split: `Original (Small) | 4x Nearest Neighbor | 4x xBRZ`. This visually proves the power of your app instantly to anyone visiting your page.
 3. **The License File:** Don't forget to actually create a file named `LICENSE` in your repository root and paste the GPLv3 text inside it, as we discussed!
 ```
