@@ -62,6 +62,3 @@ This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**
 ------
 
 *Built with ❤️ for pixel artists and retro gaming enthusiasts.*
-
-3. **The License File:** Don't forget to actually create a file named `LICENSE` in your repository root and paste the GPLv3 text inside it, as we discussed!
-```
