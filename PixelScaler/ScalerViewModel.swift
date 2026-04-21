@@ -91,4 +91,11 @@ class ScalerViewModel {
             }
         }
     }
+    
+    func removeImage(withId id: UUID) {
+        // 使用 transition 动画让移除过程更平滑
+        withAnimation {
+            inputImages.removeAll { $0.id == id }
+        }
+    }
 }

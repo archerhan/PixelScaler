@@ -46,16 +46,32 @@ struct ContentView: View {
                     // --- 状态 2：多图网格展示状态 ---
                     ScrollView {
                         LazyVGrid(columns: columns, spacing: 16) {
+                            // 修改 ContentView.swift 中的 ForEach 部分
                             ForEach(viewModel.inputImages) { item in
                                 VStack {
-                                    Image(nsImage: item.image)
-                                        .resizable()
-                                        .interpolation(.none) // 预览时保持像素感
-                                        .scaledToFit()
-                                        .frame(height: 100)
-                                        .background(Color(nsColor: .controlBackgroundColor))
-                                        .cornerRadius(8)
-                                        .shadow(color: .black.opacity(0.1), radius: 2, y: 1)
+                                    ZStack(alignment: .topTrailing) { // 使用 ZStack 叠加按钮
+                                        Image(nsImage: item.image)
+                                            .resizable()
+                                            .interpolation(.none)
+                                            .scaledToFit()
+                                            .frame(height: 100)
+                                            .background(Color(nsColor: .controlBackgroundColor))
+                                            .cornerRadius(8)
+                                            .shadow(color: .black.opacity(0.1), radius: 2, y: 1)
+                                        
+                                        // 删除按钮
+                                        Button(action: {
+                                            viewModel.removeImage(withId: item.id)
+                                        }) {
+                                            Image(systemName: "xmark.circle.fill")
+                                                .foregroundColor(.secondary)
+                                                .background(Color(nsColor: .windowBackgroundColor).clipShape(Circle()))
+                                                .font(.system(size: 16))
+                                        }
+                                        .buttonStyle(.plain) // 使用 plain 样式避免出现默认按钮边框
+                                        .padding(4)          // 距离图片边缘的间距
+                                        .help("移除此图片")    // 鼠标悬停提示
+                                    }
                                     
                                     Text(item.url.lastPathComponent)
                                         .font(.caption)

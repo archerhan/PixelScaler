@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A22ADAB2F95D18D002EE9EF /* LICENSE in Sources */ = {isa = PBXBuildFile; fileRef = 6A22ADAA2F95D187002EE9EF /* LICENSE */; };
 		6A22ADAD2F95D217002EE9EF /* .gitignore in Sources */ = {isa = PBXBuildFile; fileRef = 6A22ADAC2F95D216002EE9EF /* .gitignore */; };
 		6A22ADAF2F95D246002EE9EF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A22ADAE2F95D23F002EE9EF /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6A22AD752F95A791002EE9EF /* PixelScaler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelScaler.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A22ADAA2F95D187002EE9EF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LICENSE; sourceTree = "<group>"; };
 		6A22ADAC2F95D216002EE9EF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		6A22ADAE2F95D23F002EE9EF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,7 +39,6 @@
 		6A22AD6C2F95A791002EE9EF = {
 			isa = PBXGroup;
 			children = (
-				6A22ADAA2F95D187002EE9EF /* LICENSE */,
 				6A22ADAC2F95D216002EE9EF /* .gitignore */,
 				6A22ADAE2F95D23F002EE9EF /* README.md */,
 				6A22AD772F95A791002EE9EF /* PixelScaler */,
@@ -134,7 +131,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A22ADAD2F95D217002EE9EF /* .gitignore in Sources */,
-				6A22ADAB2F95D18D002EE9EF /* LICENSE in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
