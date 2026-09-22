@@ -1,0 +1,18 @@
+第三方代码与协议范围
+====================
+
+本仓库里 PixelScaler/xBRZ/ 目录下的代码来自 xBRZ 项目，不属于上面 MIT 协议
+覆盖的范围：
+
+    xBRZ - "Scale by rules" high quality image upscaling filter
+    Copyright (C) Zenju (zenju AT gmx DOT de) - All Rights Reserved
+    License: GNU General Public License v3.0
+    https://sourceforge.net/projects/xbrz/
+
+各源文件头部保留了原作者写的协议说明，请一并阅读。
+
+需要留意的两点：
+
+1. 除 PixelScaler/xBRZ/ 之外，本项目的代码由 Archer Han 以 MIT 协议授权（见 LICENSE）。
+2. 编译出来的 App 会链接 xBRZ，因此分发这个二进制文件时要遵守 GPL-3.0。
+   只取用 xBRZ 之外的那部分代码时，按 MIT 即可。
